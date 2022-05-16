@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+
+    font-family: Roboto, sans-serif;
+}
+:root {
+    --green: #0d0;
+}
+nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+nav img {
+    height: 100%;
+    margin-top: 50px;
+    padding-left: 150px;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+nav a {
+    padding: 20px;
+
+    font-size: .97em;
+    text-decoration: none;
+    font-weight: 550;
+    color: white;
+}
+
+.navContainer {
+    margin-left: auto;
+    margin-right: 100px;
+    margin-top: 50px;
+}
+button {
+    margin-right: 30px;
+    padding: 10px 15px;
+    background-color: var(--green);
+    border: 0;
+    font-weight: 700;
+    border-radius: 5px;
+    color: white;
+    z-index: -1;
+}
+
+.Section1 {
+    height: 100%;
+}
+.Skills a {
+    color: var(--green);
+    text-decoration: underline;
+    font-size: .75em;
+    cursor: pointer;
+}
+
+.imagebg img {
+    object-position: 50% 50%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -10;
+    filter: brightness(40%);
+}
+.phone {
+    display: none;
+}
+.screenn img {
+    width: 100%;
+}
+.burger {
+    color: #E6E6E6;
+    font-size: 3em;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 10px;
+    margin-top:   10px;
+    
+    opacity: 0;
+    pointer-events: none;
+    z-index: 5;
+}
+.Menu {
+    z-index: 4;
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    color: black;
+    height: 100%;
+    margin-top: -100%;
+    display: none;
+}
+/* @keyframes slideDown {
+    from {
+        margin-top: -100%;
+    }
+    to {
+        margin-top: 0px;
+    }
+}
+@keyframes slideUp {
+    from {
+        margin-top: 0px;
+    }
+    to{
+        margin-top: -100%;
+    }
+} */
+.Menu.open {
+    margin-top: 0;
+    /* animation: slideDown 1000ms ease-out; */
+}
+.Menu.close{
+    display: none;
+    margin-top: -100%;
+    /* animation: slideDown 1000ms ease-out reverse; */
+}
+.Menu ul {
+    margin-top: 100px;
+    text-align: center;
+    list-style: none;
+}
+.Menu li {
+    padding: 10px;
+    font-size: 3em;
+    font-weight: 700;
+}
+.s1Txt{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 30%;
+    color: white;
+    font-size: 1.5vw;
+    width: 40%;
+    word-wrap: normal;
+    padding-left: 100px;
+}
+.s1Txt button{
+    width: fit-content;
+    font-size: large;
+}
+.s1Txt h1{
+    font-size: 3.5vw;
+    margin-bottom: 10px;
+}
+.S2txt{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50%;
+    text-align: center;
+    margin-top: -10px;
+}
+.S2txt div{
+    width: 25%;
+    height: 100%;
+    font-size: .8em;
+}
+.S2txt div h1:first-child{
+    font-size: 6em;
+    color: var(--green);
+}
+.Skills {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 200px;
+}
+.Skills div {
+    width: 50%;
+    margin-top: -150px;
+}
+.Skills img {
+    width: 100%;
+}
+.Skills h1 {
+    font-size: 3em;
+    font-weight: 500;
+}
+.Skills span {
+    font-weight: 700;
+}
+.Skills p {
+    width: 80%;
+    padding-left: 5%;
+    font-size: 2em;
+    margin-top: 25px;
+}
+.Section3 {
+    background-color: var(--green);
+}
+.Section3 h1 {
+    color: white;
+    font-weight: 400;
+    font-size: 4em;
+    text-align: center;
+    padding-top: 75px;
+}
+.Section3 span {
+    font-weight: 900;
+}
+.Cards {
+    width: 100%;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.Cards img{
+    margin: 0 15px;
+    height: 100%;
+}
+.S4txt{
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 125px;
+}
+.S4txt span{
+    font-weight: 900;
+}
+.S4txt p:first-child{
+    font-size: 2.5em;
+}
+.S4txt p:nth-child(2){
+    font-size: 1.5em;
+}
+
+.Section5 {
+    text-align: center;
+    background-color: #E6E6E6;
+    padding: 50px 0;
+}
+.Section5 {
+    text-align: center;
+    background-color: #E6E6E6;
+    padding: 25px 0;
+    font-size: 2em;
+}
+.Media5{
+    cursor: pointer;
+    display: flex;
+    width: 90%;
+    margin: auto auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.Media5 img {
+    height: 100px;
+}
+.Section6 {
+    text-align: center;
+    font-size: 2em;
+    padding-bottom: 25px;
+}
+.partners img{
+    width: 22.5%;
+    transform: scale(150%);
+}
+.partners{
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+}
+.Section7 {
+    background-color:  #E6E6E6;
+    padding: 20px 0 75px 0;
+    text-align:center;
+
+}
+.Section7 p{
+    font-size: 4em;
+}
+.Section7 button{
+    background-color: black;
+    color: white;
+    font-size: 1.75em;
+    font-weight: 400;
+    margin-top: -100px;
+    padding: 15px 15px;
+    cursor: pointer;
+    transition: background-color 200ms li;
+}
+.Section7 button:hover{
+    background-color: rgb(83, 83, 83);
+}
+.Section8{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    padding: 50px 200px ;
+    color: white;
+    align-items: center;
+    font-size: 1.5em;
+}
+.Section8 a {
+    color: var(--green);
+    font-size: .9em;
+}
+.Section8 i {
+    margin: 0 10px;
+    cursor: pointer;
+    color: white;
+    transition: color 200ms;
+}
+.Section8 i:hover{
+    color: #b8b8b8;
+}
+@media screen and (max-width:1350px) {
+    .Cards{
+        width: 100%;
+        height: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width:1140px) {
+    .S2txt{
+        display: flex;
+        width: 70%;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        height: 50%;
+        text-align: center;
+        margin-top: -10px;
+        text-align: center;
+        flex-direction: column;
+    }
+    .phone {
+        display: block;
+    }
+    .screenn {
+        display: none;
+    }
+    .navContainer {
+        display: none;
+    }
+    .burger{
+        opacity: 1;
+        pointer-events: all;
+    }
+}

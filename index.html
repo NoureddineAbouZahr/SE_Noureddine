@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Noureddine Abouzahr</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://kit.fontawesome.com/692baf9072.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<script>
+		function toggleMenu() {
+			var menu = document.getElementsByClassName("Menu")[0];
+			if (menu.classList.value == "Menu" || menu.classList.value.includes("close")) {
+				menu.classList.remove("close");
+				menu.classList.add("open");
+			} else {
+				menu.classList.add("close");
+				menu.classList.remove("open");
+			}
+		}
+
+		// function onload() {
+		// 	var media = document.getElementsByClassName("Media5")[0];
+		// 	let index = 0;
+		// 	let links = [
+		// 		"https://www.forbes.com/sites/melissarowley/2017/12/13/meet-the-cofounders-scaling-coding-skills-across-lebanon/#3caf7356c041",
+		// 		"https://techcrunch.com/2017/06/06/what-silicon-valley-can-learn-from-lebanons-women-in-tech/",
+		// 		"https://www.theguardian.com/technology/2016/jun/22/women-tech-games-industry-middle-east-iran-lebanon",
+		// 		"http://information.tv5monde.com/info/le-liban-se-reve-silicon-valley-du-moyen-orient-161175",
+		// 		"https://www.lorientlejour.com/article/999663/codage-contre-chomage.html",
+		// 		"https://www.entrepreneur.com/article/279216",
+		// 		"https://www.wamda.com/memakersge/2016/07/se-factory-prepares-generation-coders-lebanon",
+		// 		"https://www.executive-magazine.com/entrepreneurship/is-lebanons-startup-ecosystem-sustainable"
+		// 	]
+		// 	Array.from(media.children).forEach(a => {
+		// 		if (a.tagName == 'A') {
+		// 			a.onclick = function() {
+		// 				window.open(links[index],"_blank")
+		// 			}
+		// 			index++;
+		// 		}
+		// 	});
+		// }
+	</script>
+	<div class="Menu close">
+		<ul>
+			<li>Home</li>
+			<li>Get Trained</li>
+			<li>Hire Talent</li>
+			<li>FAQs</li>
+			<li>Blog</li>
+			<li>About</li>
+			<li>Contact</li>
+			<li>Apply Now</li>
+		</ul>
+	</div>
+	<div class="Section1">
+		<div class="imagebg screenn">
+			<img src="/assets/div1bg.jpg" sizes="200vw, 100vw">
+		</div>
+		<div class="imagebg phone">
+			<img src="/assets/div1bg.jpg" sizes="200vw, 100vw">
+		</div>
+		<nav>
+			<img src="/assets/SEFlogo.png" alt="">
+			<div class="navContainer">
+				<a href="">Home</a>
+				<a href="">Get Trained</a>
+				<a href="">Hire Talent</a>
+				<a href="">FAQs</a>
+				<a href="">Blog</a>
+				<a href="">About Us</a>
+				<a href="">Contact</a>
+				<button>Apply Now</button>
+			</div>
+			<i class="fa-solid fa-bars burger" onclick="toggleMenu()"></i>
+			
+
+		</nav>
+		<div class="s1Txt">
+			<h1> <b style="font-weight: 700;">Empowering youth</b>
+				<br>
+				<span style="font-weight: 500;">with tech jobs.</span>
+			</h1>
+			<p>
+				SE Factory’s top-ranked training programs graduate tech professionals working for companies all over the
+				world.
+			</p>
+			<button>Learn More</button>
+		</div>
+
+
+	</div>
+	<div class="Section2">
+		<div class="S2txt">
+			<div>
+				<h1>90%</h1>
+				<h1>Employment Success Rate <br> —</h1>
+			</div>
+			<div>
+				<h1>500+</h1>
+				<h1>Youth Trained Since 2016 <br> —</h1>
+			</div>
+			<div>
+				<h1>145+</h1>
+				<h1>Global Recruitment Partner Companies <br> —</h1>
+			</div>
+		</div>
+		<div class="Skills">
+			<div>
+				<img src="./assets/S2Img.jpg">
+			</div>
+			<div>
+				<h1>Get the skills<br><span>companies look for.</span></h1>
+				<p>Learn how to become a professional Full Stack Web Developer. Acquire technical and interpersonalskills, and gain access to a vast network of employers.
+					<br><a onclick="alert('no')">Learn More →</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="Section3">
+		<h1>Discover the program <br> <span>that’s right for you.</span></h1>
+		<div class="Cards">
+			<img src="assets/card2.png">
+			<img src="assets/card1.png">
+		</div>
+	</div>
+	<div class="Section4">
+		<div class="Skills">
+			<div>
+				<img src="./assets/s4img.jpg">
+			</div>
+			<div>
+				<h1>Our graduates are<br><span>market ready.</span></h1>
+				<p>Students go through deep technical training, including robust theory and intensive coding, with emphasis on critical thinking and a can-do attitude.
+					<br><a onclick="alert('no')">Learn More →</a>
+				</p>
+			</div>
+		</div>
+		<div class="S4txt">
+			<p>Join our <span> Global Recruitment Partner Network </span>and access top <br> talent wherever you are.</p>
+			<p>150+ companies from over 10 countries have joined our network since 2016</p>
+			<img src="/assets/grpn.jpg" alt="" width="105%">
+			<img src="/assets/ugrpn.jpg" alt="" width="75%" style="margin-top: 50px;">
+		</div>
+	</div>
+	<div class="Section5">
+		<h1>In The Media</h1>
+		<div class="Media5">
+			<a href=""><img src="assets/Media/Forbes.png"></a>
+			<a href=""><img src="assets/Media/tech.png"></a>
+			<a href=""><img src="assets/Media/theG.png"></a>
+			<a href=""><img src="assets/Media/tv.png"></a>
+			<br>
+			<a href=""><img src="assets/Media/2l.png"></a>
+			<a href=""><img src="assets/Media/en.png"></a>
+			<a href=""><img src="assets/Media/wamda.png"></a>
+			<a href=""><img src="assets/Media/red.png"></a>
+		</div>
+	</div>
+	<div class="Section6">
+		<h1>Funding Partners</h1>
+		<img src="./assets/funding.png" width="80%" style="margin-top: 10px;">
+		<hr>
+		<h1>Strategic Partners</h1>
+		<div class="partners">
+			<img src="./assets/strategic_partners/bdd.jpeg">
+			<img src="./assets/strategic_partners/LIU.jpg">
+			<img src="./assets/strategic_partners/bery.jpg">
+			<img src="./assets/strategic_partners/spark.jpg">
+		</div>
+		
+	</div>
+	<div class="Section7">
+		<p><b>Subscribe to our newsletter</b><br>and stay up-to-date with our latest news.</p>
+		<span><button>Subscribe</button></span>
+	</div>
+	<div class="Section8">
+		<a href="">Privacy Policy</a>
+		<p>Copyright © 2022 SE Factory SAL. All Rights Reserved.</p>
+		<div>
+			<i class="fa-brands fa-linkedin-in"></i>
+			<i class="fa-brands fa-facebook-f"></i>
+			<i class="fa-brands fa-instagram"></i>
+			<i class="fa-brands fa-twitter"></i>
+		</div>
+	</div>
+
+</body>
+
+</html>
